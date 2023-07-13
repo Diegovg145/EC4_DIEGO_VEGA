@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" >
+</head>
+<body>
+    <header>
+        <div class="header-contenido">
+            <div class="header-img">
+                <div class="header-imagen">
+                    <img src="../static/images/untels.png" alt="logo">
+                </div>
+                <h1 class="header-heading">Lenguaje de programación</h1>   
+            </div>
+
+            <div class="header-navegacion">
+                <nav>
+                    <ul>
+                        <li><a href="/cursos">CURSOS</a></li>
+                        <li><a href="/crearcurso">CREAR CURSO</a></li>
+                        <li><a href="/carrera">CARRERAS</a></li>
+                        <li><a href="/crearcarrera">CREAR CARRERA</a></li>
+                    </ul>
+                </nav>  
+            </div>
+            
+        </div>
+    </header>
+    <div id="content" class="content">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    
+</body>
+</html>

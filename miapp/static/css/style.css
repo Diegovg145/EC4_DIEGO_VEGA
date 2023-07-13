@@ -1,0 +1,65 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    font-size: 1.6rem;
+}
+/*GLOBALES*/
+h1{
+    font-size: 4.4rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.8rem;
+}
+/*HEADER*/
+.header-contenido{
+    background-color: #ffffff;
+    min-height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-img{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-left: 2rem;
+}
+.header-imagen{
+    width: 10rem;
+}
+.header-heading{
+    font-size: 4rem;
+}
+.header-navegacion{
+    margin-right: 2rem;
+}
+.header-navegacion nav ul li{
+    list-style: none;
+}
+.header-navegacion nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3rem;
+}
+
