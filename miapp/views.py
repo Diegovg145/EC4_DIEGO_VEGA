@@ -10,3 +10,11 @@ def crearcarrera(request):
    return render(request,"crearcarrera.html")
 def index(request):
     return render(request,"index.html")
+def crear_curso(request):
+   curso = curso(
+   titulo = "Tendencias Covid con Power BI",
+   contenido = "El articulo muestra información de....",
+   publicado = True
+   )
+   curso.save()
+   return HttpResponse(f"curso Creado: {curso.titulo} - {curso.contenido}")
